@@ -74,7 +74,7 @@ function findBlockStart(
         closedBlocks.push(true);
       } else if (blockMatch.type === MatchType.start) {
         if (closedBlocks.length === 0) {
-          const [fullText, _ws1, matchText, _ws2] = blockMatch.match;
+          const [fullText, , matchText] = blockMatch.match;
           const offset = fullText.indexOf(matchText);
           return new vscode.Position(
             i,
@@ -123,7 +123,7 @@ function findBlockEnd(
       } else if (blockMatch.type === MatchType.end) {
         openedBlocks.pop();
         if (openedBlocks.length === 0) {
-          const [fullText, _ws1, matchText, _ws2] = blockMatch.match;
+          const [fullText, , matchText] = blockMatch.match;
           const offset = fullText.indexOf(matchText);
           return new vscode.Position(
             i,

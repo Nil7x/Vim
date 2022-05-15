@@ -5,13 +5,13 @@ export default {
     MoveDown: "k",
     MoveUp: "i",
     MoveLineEnd: "o",
-    MoveLineStart: "u"
+    MoveLineStart: "u",
   },
   Actions: {
-    InsertMode: "~",
+    InsertMode: "e",
     InsertAtLineStart: "U",
     InsertAtLineEnd: "O",
     NewLineAbove: "I",
-    NewLineBelow: "K"
-  }
+    NewLineBelow: "K",
+  },
 };
