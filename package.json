@@ -2,7 +2,7 @@
 	"name": "simple-vim-redux",
 	"displayName": "Simple Vim Redux",
 	"description": "Vim extension for VSCode forked from Simple Vim by jpotterm",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"license": "MIT",
 	"publisher": "garlandcrow",
 	"repository": {

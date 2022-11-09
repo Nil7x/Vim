@@ -8,7 +8,7 @@ export default {
     MoveLineStart: "u",
   },
   Actions: {
-    InsertMode: "e",
+    InsertMode: "h",
     InsertAtLineStart: "U",
     InsertAtLineEnd: "O",
     NewLineAbove: "I",
