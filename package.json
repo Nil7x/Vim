@@ -1,13 +1,13 @@
 {
-	"name": "simple-vim-redux",
-	"displayName": "Simple Vim Redux",
+	"name": "nil-vim",
+	"displayName": "NilVim",
 	"description": "Vim extension for VSCode forked from Simple Vim by jpotterm",
 	"version": "0.1.1",
 	"license": "MIT",
-	"publisher": "garlandcrow",
+	"publisher": "Nilux",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/garlandcrow/vscode-simple-vim.git"
+		"url": "https://github.com/Nil7x/Vim.git"
 	},
 	"engines": {
 		"vscode": "^1.22.2"
@@ -22,19 +22,24 @@
 	"contributes": {
 		"keybindings": [
 			{
-				"key": "shift+5",
-				"command": "editor.action.jumpToBracket",
-				"when": "editorTextFocus && !extension.simpleVim.insertMode"
-			},
-			{
-				"key": "shift+j",
-				"command": "editor.action.joinLines",
-				"when": "editorTextFocus && !extension.simpleVim.insertMode"
-			},
-			{
 				"key": "Escape",
 				"command": "extension.simpleVim.escapeKey",
 				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+r",
+				"command": "redo",
+				"when": "editorTextFocus && !extension.simpleVim.insertMode"
+			},
+			{
+				"key": "ctrl+d",
+				"command": "extension.simpleVim.scrollDownHalfPage",
+				"when": "editorTextFocus && !extension.simpleVim.insertMode"
+			},
+			{
+				"key": "ctrl+u",
+				"command": "extension.simpleVim.scrollUpHalfPage",
+				"when": "editorTextFocus && !extension.simpleVim.insertMode"
 			},
 			{
 				"key": "ctrl+f",
@@ -78,11 +83,5 @@
 	},
 	"dependencies": {
 		"vsce": "^2.11.0"
-	},
-	"__metadata": {
-		"id": "fb57f80d-708d-4ade-b92b-e420c6b5c04a",
-		"publisherDisplayName": "GarlandCrow",
-		"publisherId": "fe4ca483-01fb-4881-9e30-524a40026553",
-		"isPreReleaseVersion": false
 	}
 }
